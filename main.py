@@ -9,6 +9,7 @@ def example():
     headers = {
         'Content-Type': 'application/json',
         'Cache-Control': 'max-age=360000',
+        'Content-Length': '150',
     }
     response = make_response(jsonify(headers), 200) # here to change status code
     response.headers = headers # set headers
